@@ -1,0 +1,155 @@
+*{margin: 0;padding: 0;}
+li{list-style: none;}
+body{font-size:0.22rem;}
+a{text-decoration: none;}
+.clearfix:after{content: "";height: 0;display: block;clear: both;visibility: hidden;}
+.mg2{margin: 0.02rem;}
+.mg4{margin: 0.04rem;}
+.mg8{margin: 0.08rem;}
+.mgt20{margin-top: 0.2rem;}
+.mgt10{margin-top: 0.1rem;}
+.mgt5{margin-top: 0.05rem;}
+.pd2{padding: 0.02rem;}
+.pd5p{padding:0 5%}
+.pd10p{padding:0 10%}
+.pt5{padding-top: 0.05rem;}
+.mgRnone{margin-right:0;}
+.verTop{vertical-align: top;}
+.text-right{text-align:right;}
+/*封装头部大标题*/
+header{width:3.75rem;height:.38rem;background:#c36808;text-align: center;}
+header h3{height:0.22rem;line-height: 0.22rem;color:#fff ;font-size:0.18rem ;font-weight: normal;}
+header h4{height:0.38rem;line-height: 0.38rem;color:#fff ;font-size:0.18rem ;font-weight: normal;}
+header p{height:0.16rem;line-height: 0.16rem;color:#ebd5c8 ;font-size:0.12rem ;}
+header a{position: absolute;width:0.23rem;height:0.23rem;}
+header a img{float: left;}
+header .navleft{left: 0.1rem;top:0.1rem}
+header .navright{right: 0.1rem;top:0.1rem}
+/*nav菜单栏*/
+nav{width:3.75rem;height: 0.37rem;background:#AD4100}
+nav ul{height: 0.37rem}
+nav li{float: left;height: 0.37rem;width: 33.333%;text-align: center;padding:0 0.18rem;box-sizing: border-box;display: flex;align-items: center;}
+nav .bordermid{border-left:1px solid #dc6b00;border-right: 1px solid #731906;}
+nav .borderleft{border-left:1px solid #dc6b00;}
+nav .borderright{border-right: 1px solid #731906;}
+nav li img{float: left;}
+nav p{float:left;font-size: 0.12rem;color: #fff;height: 0.16rem;line-height: 0.16rem;padding-left:0.05rem;overflow: hidden;}
+/*封装banner轮播图*/
+#banner{width:3.75rem;box-shadow:0 0.1rem 0.1rem rgba(0,0,0,0.5) inset;position: relative;}
+#banner img{width:100%;height:100%;z-index: -2;position: relative;}
+#banner .bannerMask{width: 100%;height: 0.35rem;border-top: 0.01rem solid #000;background:rgba(0,0,0,0.5);position: absolute;bottom: 0.05rem;text-align: center;}
+#banner .bannerMask ul{display: inline-block;height:0.17rem;padding-top: 0.17rem;}
+#banner .bannerMask li{width:0.05rem;height:0.05rem;background:#A8A8A8;float:left;margin:0 0.05rem ;}
+#banner .bannerMask .active{background:#fff;}
+/*封装icon组件*/
+/*第一组icon*/
+.icon .icon-sm-wrap{width:45%;float: left;}
+.icon .icon-sm{width:47%;height:0.73rem;text-align: center;font-size: 0.18rem;float: left;display: flex;flex-direction:row;align-items:center;flex-wrap: wrap;justify-content: center;}
+.icon .icon-sm p{height:0.3rem ;line-height:0.3rem ;font-size: 0.12rem;color:#fff ;}
+.icon .icon-sm .icon-img{width:100%;height: 100%;}
+.icon .icon-md{width:32%;height:1rem;text-align: center;font-size: 0.12rem;float: left;}
+.icon .icon-md img{padding-top: 0.15rem;}
+.icon .icon-md p{height:0.15rem ;line-height:0.15rem ;font-size: 0.12rem;color:#fff ;padding-top: 0.05rem;}
+.icon .icon-bg{width:48%;height:1rem;text-align: center;font-size: 0.12rem;float: left;}
+.icon .icon-bg img{padding-top: 0.15rem;}
+.icon .icon-bg p{height:0.27rem ;line-height:0.27rem ;font-size: 0.12rem;color:#fff ;padding-bottom: 0.08rem;}
+.icon .icon-sml{width:48%;height:0.49rem;text-align: center;font-size: 0.12rem;float: left;}
+.icon .icon-sml img{padding-left:0.21rem;float:left;padding-top: 0.08rem;}
+.icon .icon-sml p{float:left;height:0.47rem ;line-height:0.47rem ;font-size: 0.12rem;color:#fff ;padding-bottom: 0.08rem;padding-left: 0.08rem;}
+.icon .icon-tbg{width:53%;height:1.5rem;text-align: center;font-size: 0.12rem;float: left;justify-content: center;display: flex;flex-direction:row;align-items:center;flex-wrap: wrap;}
+.icon .icon-tbg img{}
+.icon .icon-tbg p{height:0.35rem ;line-height:0.35rem ;font-size: 0.18rem;color:#fff ;}
+/*第二组icon*/
+.icon .icon-lmd{width:45%;height:1rem;text-align: center;font-size: 0.18rem;float: left;}
+.icon .icon-lmd img{padding-top: 0.15rem;}
+.icon .icon-lmd p{height:0.15rem ;line-height:0.15rem ;font-size: 0.18rem;color:#fff ;padding-top: 0.05rem;}
+.icon .icon-lbg{width:45%;height:1.5rem;text-align: center;font-size: 0.18rem;float: left;}
+.icon .icon-lbg img{padding: 0.15rem 0 0.2rem;}
+.icon .icon-lbg p{height:0.3rem ;line-height:0.3rem ;font-size: 0.18rem;color:#fff ;padding-bottom: 0.08rem;}
+.icon .icon-mdl{width:52%;height:0.74rem;text-align: center;font-size: 0.18rem;float: left;}
+.icon .icon-mdl img{padding-left:0.21rem;float:left;padding-top: 0.08rem;}
+.icon .icon-mdl p{float:left;height:0.47rem ;line-height:0.47rem ;font-size: 0.18rem;color:#fff ;padding-bottom: 0.08rem;padding-left: 0.08rem;}
+/*通用icon颜色*/
+.icon .brown{background:#B28244}
+.icon .lightbrown{background:#a89600}
+.icon .orange{background:#A64110}
+.icon .bgred{background: #BE0A1C;}
+.icon .red{background:#a82400}
+.icon .yellow{background:#FC8D24}
+.icon .bgyellow{background:#CD6B1F}
+.icon .green{background:#48AD22}
+.icon .greenyellow{background:#CCCA2A}
+.icon .blue{background:#0D63B3}
+.icon .bgblue{background:#1E82BE}
+.icon .bglightblue{background:#20BBBB}
+.icon .lightblue{background:#178BFC}
+.icon .lineblue{background:#8ecbff}
+.icon .deepgreen{background:#179FA7}
+/*封装图片遮罩*/
+.picttext-cover .cover-long{float:left;width: 66%;hight: 1rem;position: relative;margin-left: 0;}
+.picttext-cover .cover-long img{float:left;width: 100%;height:1rem}
+.picttext-cover .cover-long .bannerMask{width: 100%;height: 0.3rem;background:rgba(255,255,255,0.5);position: absolute;bottom: 0;}
+.picttext-cover .cover-long .bannerMask p{height: 0.3rem;line-height:0.3rem ;font-size: 0.12rem;color:#000;}
+.picttext-cover .cover-sm{float:left;width: 31%;height: 1rem;position: relative;box-sizing: border-box;}
+.picttext-cover .cover-sm img{float:left;width: 100%;height:1rem}
+.picttext-cover .cover-sm .bannerMask{width: 100%;height: 0.3rem;background:rgba(0,0,0,0.5);position: absolute;bottom: 0;}
+.picttext-cover .cover-sm .bannerMask p{height: 0.3rem;line-height:0.3rem ;font-size: 0.12rem;color:#fff;text-align: center;}
+.picttext-cover .cover-mid{float:left;width: 52%;height: 1rem;position: relative;margin-left: 0;}
+.picttext-cover .cover-mid img{float:left;width: 100%;height:1rem}
+.picttext-cover .cover-mid .bannerMask{width: 100%;height: 0.3rem;background:rgba(255,255,255,0.5);position: absolute;bottom: 0;}
+.picttext-cover .cover-mid .bannerMask p{height: 0.3rem;line-height:0.3rem ;font-size: 0.12rem;color:#000;}
+/*picshaw图文封装*/
+.picshaw{width: 48%;border:0.01rem solid #ccc;float: left;padding:1%;text-align: center;box-sizing: border-box;box-shadow: 0 0.05rem 0.05rem rgba(0,0,0,0.5);}
+.picshaw .pic{width:98%;}
+.picshaw .pic img{width:100%;float: left;}
+.picshaw p{height: 0.3rem;line-height: 0.3rem;font-size: 0.14rem;}
+/*littletitle小标题封装*/
+.littletitle{width:3.75rem;height: 0.37rem;background:#AD4100;text-align: center;}
+.littletitle h4{height: 0.37rem;line-height: 0.37rem;font-size:0.14rem ;color: #fff;font-weight: normal;}
+/*destext图文描述封装*/
+.destext .pic{width: 3.75rem;box-sizing: border-box;}
+.destext .pic img{width:100%;}
+.destext .text{padding:2% 5% 5%}
+.text-center{text-align: center;}
+.destext .text p{line-height: 0.16rem;font-size: 0.12rem;color: #7A7A7A;}
+.destext .text span{line-height: 0.16rem;font-size: 0.12rem;color:#74300C ;}
+/*分页切换*/
+.pagechange{height: 0.3rem;width:100%;background:#AD4100 ;padding:0 8%;box-sizing: border-box;}
+.pagechange li{float: left;width: 50%;box-sizing: border-box;text-align: center;height: 0.3rem;line-height: 0.3rem;font-size: 0.14rem;}
+.pagechange li a{color: #fff;}
+.pagechange  .borderleft{border-left:1px solid #dc6b00;}
+.pagechange  .borderright{border-right: 1px solid #731906;}
+/*text-long-pic长图文样式*/
+.text-long-pic{border-bottom: 1px solid #7b7b7b;padding-bottom: 0.1rem;}
+.text-long-pic .pic{float: left;width: 30%;;}
+.text-long-pic .pic img{width: 100%;}
+.text-long-pic .text{float: left;width: 70%;}
+.text-long-pic h3{height: 0.45rem;line-height: 0.45rem;font-size: 0.18rem;}
+.text-long-pic .text p{line-height: 0.17rem;font-size: 0.12rem;padding-left: 0.09rem;}
+.text-md-pic{border-bottom: 1px solid #7b7b7b;padding-bottom: 0.1rem;}
+.text-md-pic .pic{float: left;width: 25%;;}
+.text-md-pic .pic img{width: 100%;}
+.text-md-pic .text{float: left;width: 75%;}
+.text-md-pic h3{height: 0.45rem;line-height: 0.45rem;font-size: 0.18rem;}
+.text-md-pic .text p{line-height: 0.17rem;font-size: 0.12rem;padding-left: 0.09rem;}
+/*textdes图文详细封装*/
+.textdes {width: 100%;}
+.textdes h3{border-bottom: 0.01rem solid #000;height: 0.23rem;line-height: 0.23rem;font-size:0.18rem ;color: #623705;}
+.textdes span{height: 0.19rem;line-height: 0.19rem;font-size:0.12rem ;color: #cf9653;}
+.textdes p{line-height: 0.14rem;font-size:0.12rem ;color: #8b8b8b;}
+/*map封装*/
+#map{width: 100%;height: 1.67rem;border: 0.01rem solid #000;}
+/*text-contact封装*/
+.text-contact p{line-height: 0.24rem;font-size: 0.14rem;color: #000;}
+.text-contact span{height:0.24rem;color:#b5b5b5 ;}
+/*form表单*/
+form .inputlabel label{height:0.32rem ;line-height: 0.32rem;font-size: 0.14rem;color: #4e4e4e;}
+form .inputlabel input{height:0.32rem ;line-height: 0.32rem;font-size: 0.14rem;color: #4e4e4e;border: 0.02rem solid #CFCFCF;box-sizing: border-box;width: 70%;}
+form .inputlabel textarea{height:1.6rem ;line-height: 0.32rem;font-size: 0.14rem;color: #4e4e4e;border: 0.02rem solid #CFCFCF;box-sizing: border-box;width: 70%;}
+form .inputlabel button{height:0.23rem ;line-height: 0.23rem;font-size: 0.14rem;color: #fff;width: 0.57rem;background:#A74623;border:none}
+/*honor封装*/
+.honor{width: 29%;float: left;}
+.honor .pic{width: 100%;}
+.honor .pic img{width: 100%;}
+.honor p{height: 0.14rem;line-height:0.14rem ;color: #ccc;font-size: 0.12rem;}
+/**/
